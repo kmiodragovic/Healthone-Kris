@@ -1,0 +1,77 @@
+body {
+    background: #E8CBC0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    background-color: transparent;
+}
+
+.pull-right img-thumbnail {
+    margin-top: -10px;
+    margin-bottom: 10px
+}
+
+.header-row {
+    margin-top: 10px
+}
+
+.banner-img {
+    margin-bottom: 10px
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.product-img {
+    width: 70%;
+}
+
+hr{
+    background-color: #00aaff;
+    border: 1px;
+}
+
+footer{
+    color: #66CCFF;
+}
+/* Css van de tabellen */
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+    width: auto;
+}
+
+/* Banner op de homepage */
+
+#marquee-cont {
+    background: green;
+    color: blue;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+#marquee-cont marquee {
+    margin-top: 5px;
+}
+#marquee-news {
+    background: #ffe600;
+    color: #ff009d;
+    padding: 5px;
+}
+#ticker-title{
+    border:none;
+    padding:5px 20px;
+    background:#E21B4D;
+    color: #173084;
+}
+#ticker-title:focus{
+    outline:none;
+}

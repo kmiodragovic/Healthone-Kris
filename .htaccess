@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteRule ^category/([0-9]+)/?$ /public/index.php?id=$1    [NC,L]    # Handle category requests
+RewriteRule ^product/([0-9]+)?$ /public/index.php?id=$1    [NC,L]    # Handle product requests
+RewriteRule ^review/([0-9]+)/?$ /public/index.php?id=$1    [NC,L]
+RewriteRule ^admin/delete/([0-9]+)/?$ /public/index.php?id=$1    [NC,L]    
+
+# Rewrite all the default paths to public e.g. /css/style.css -> /public/css/style.css
+RewriteCond %{REQUEST_URI} !/public
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Rewrite all the files to index.php /random -> /public/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /public/index.php [NC,L,QSA]
+
